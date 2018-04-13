@@ -29,8 +29,7 @@ from pyVim import connect
 from pyVmomi import vmodl
 from pyVmomi import vim
 from pyVim.task import WaitForTask
-import vm_config
-import tools.cli as cli
+import VMBR_APP.vm_config
 
 
 

@@ -2,12 +2,12 @@
 
 from flask import jsonify
 from flask import render_template, flash, redirect, session, url_for, request, g
-from app import app, db, LoginMa
+from VMBR_APP import app, db
 #from forms import loginForm, serviceForm
 #from flask_login import login_user, logout_user, current_user, login_required
-from models import VMInf
+from VMBR_APP.models import VMInf
 from sqlalchemy import desc
-from app import get_all_vms, operation_snapshots
+from VMBR_APP.vm_app import get_all_vms, operation_snapshots
 
 @app.route('/get_all_vms/<int:page>')
 def get_all_vms_info():

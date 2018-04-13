@@ -7,4 +7,3 @@ app = Flask(__name__)    #app instance
 app.config.from_object('config') #app configuration file
 db = SQLAlchemy(app)
 
-from VMBR_APP import views, models
